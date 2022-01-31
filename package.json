@@ -1,7 +1,7 @@
 {
   "name": "typerxparser",
   "version": "0.0.1",
-  "description": "The Parser for TyperScript",
+  "description": "The Parser for TyperX",
   "main": "index.js",
   "scripts": {
     "test": "jest",

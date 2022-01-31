@@ -9,5 +9,6 @@
  * // returns 'const a = 10;\tconst b = 20;\tif(a > b) {console.log(a);} else {console.log(b);}'
  * @author Himanshu Jangid
  * @version 0.0.1
+ * // room love lalala
  */
 export default function Parser(input: string, tabSize: number) : string
