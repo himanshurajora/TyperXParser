@@ -1,0 +1,21 @@
+{
+  "name": "typerxparser",
+  "version": "0.0.1",
+  "description": "The Parser for TyperScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "Typerx",
+    "parser"
+  ],
+  "author": "Himanshu Jangid",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15"
+  }
+}
