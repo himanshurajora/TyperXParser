@@ -41,3 +41,12 @@ test('The Output of ' + complexInput, () => {
     expect(Parser(complexInput)).toEqual(`const a = [\\n\\t[1, 2, 3],\\n\\t[4, 5, 6],\\n\\t[7, 8, 9]\\n];\\nconst b = [\\n\\t[1, 2, 3],\\n\\t[4, 5, 6],\\n\\t[7, 8, 9]\\n];\\nconst c = [];\\nfor(let i = 0; i < a.length; i++) {\\n\\tfor(let j = 0; j < b.length; j++) {\\n\\t\\tlet sum = 0;\\n\\t\\tfor(let k = 0; k < a[i].length; k++) {\\n\\t\\t\\tsum += a[i][k] * b[k][j];\\n\\t\\t}\\n\\t\\tc[i][j] = sum;\\n\\t}\\n}`)
 })
 
+// test for "
+let testForQuote = `
+const a = "Hello World";
+`
+test('The Output of ' + testForQuote, () => {
+    expect(Parser(testForQuote)).toEqual(`const a = \\"Hello World\\";`)
+})
+
+
