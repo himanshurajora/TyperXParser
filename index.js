@@ -19,7 +19,7 @@ function Parser(input, tabSize = 4) {
     // regular expression for tabs
     let tabRegex = new RegExp(tab, 'g');
     // replace all new lines with \n and all tabs with \t and return the output and then replace all " with \"
-    return input.replace(/\n/g, '\\n').replace(tabRegex, '\\t').replace(/"/g, '\\"');
+    return input.replace(/\n/g, '\\n').replace(tabRegex, '\\t').replace(/"/g, '\\"').replace(/\t/g,'\\t');
 }
 
 module.exports = Parser;
